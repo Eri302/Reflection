@@ -3,22 +3,38 @@
     <head>
         <title>Netmatters | Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
         <script src="https://kit.fontawesome.com/46da8ccc63.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <link rel = "stylesheet" href = "styles.css">
     </head>
     <body>
         <header>
-            <div>
-                <a href = ""><img src = "https://www.netmatters.co.uk/assets/images/f-logo.png" alt = "netmatters logo"></a>
-                <a class = "button-link" id = "support" href = ""><i class="fas fa-mouse"></i>support</a>
-                <a class = "button-link" id = "contact" href = ""><i class="far fa-paper-plane"></i>contact</a>
-                <form>
-                    <input type = "text" id = "search-bar" placeholder = "Search...">
-                    <button id = "search-button" type = "submit"><i class="fas fa-search"></i></button>
+            <div class = "header">
+                <div class = "top-header">
+                    <a href = "" class = "netm-logo-container"><img class = "netm-logo" src = "https://www.netmatters.co.uk/assets/images/f-logo.png" alt = "netmatters logo"></a>
+                    <a class = "button-link wide-only" id = "support" href = ""><i class="fas fa-mouse"></i>support</a>
+                    <a class = "button-link wide-only" id = "contact" href = ""><i class="far fa-paper-plane"></i>contact</a>
+                    <form class = "nonmobile-only">
+                        <input type = "text" id = "search-bar" placeholder = "Search...">
+                        <button id = "search-button" type = "submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <div class = "mobile-nav">
+                        <a class = "mobile-only mobile-contact"><i class="fas fa-phone-volume fa-2x"></i></a>   
+                        <button type = "button" class = "menu-button">
+                            <span class = "menu-icon"></span>
+                            <span class = "menu-icon"></span>
+                            <span class = "menu-icon"></span>
+                            <span class = "menu-label">MENU</span>
+                        </button>
+                    </div>
+                </div>
+                <form class = "mobile-only mobile-search">
+                    <div class = "mobile-search-bar">
+                        <input type = "text" id = "search-bar" placeholder = "Search...">
+                        <button class = "mobile-search-button"type = "submit"><i class="fas fa-search fa-lg"></i></button>
+                    </div>
                 </form>
-                <button type = "button" id = "menu-button">
-                    <i class="fas fa-bars"></i>
-                    MENU
-                </button>
             </div>
             <div class = "nav-bar">
                 <a>
