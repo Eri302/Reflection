@@ -10,10 +10,11 @@ html {
 }
 body {
     background-color: $black;
-    font-family: Lato,Helvetica,Arial,sans-serif;
+    font-family: 'Poppins',Lato,Helvetica,Arial,sans-serif;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: .4px;
+    margin: auto;
 }
 input:focus { 
     outline: none !important;
@@ -148,6 +149,7 @@ td div {
 }
 .middle {
     margin-bottom: 50px;
+    color: white;
 }
 .circle-icon {
     border-radius: 50%;
@@ -156,7 +158,7 @@ td div {
     width: 60px;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 auto 17px;
 }
 .nav2-hover {
     border: 1px solid #ccc;;
@@ -168,22 +170,40 @@ td div {
 }
 .nav2-hover a{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.nav2-text {
+    margin: 0 auto;
+    font-size: .8125rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+}
+.h4 , .nav2-text {
+    color: #333645;
+}
+.grow {
+    flex-grow: 1;
 }
 .readmore {
-   margin: 13px auto 0 auto; 
+   margin: 14px auto 0; 
    padding: 5px 15px;
    width: 97.734px;
    border-radius: 3px;
    line-height: 35px;
+   font-weight: 400px;
+   justify-self: end;
 }
-h4 {
+.h4 {
     font-size: 1.125rem;
+    margin: 0 auto;
+    font-weight: 400px;
 }
 h3 {
     margin: 0 0 26px 0;
 }
 h2 {
-    font-weight: 400;
+    font-weight: normal;
     font-size: 2rem;
     margin: 0;
     word-wrap: normal;
@@ -191,35 +211,52 @@ h2 {
 .main-article {
     margin-bottom: 25px;
 }
+
 #purple-hover:hover {
    border-color: $purple;
    background-color: $purple;
+   color: $purple;
 }
 #blue-hover:hover {
     border-color: $blue;
     background-color: $blue;
+    color: $blue;
 }
 #red-hover:hover {
     border-color: $red;
     background-color: $red;
+    color: $red;
 }
 #grey-hover:hover {
     border-color: $grey;
     background-color: $grey;
+    color: $grey;
 }
 #green-hover:hover {
     border-color: $green;
     background-color: $green;
+    color: $green;
 }
 #pink-hover:hover {
     border-color: $pink;
     background-color: $pink;
+    color: $pink;
 }
-.nav2-hover:hover .circle-icon {
-    background-color: $black;
+.nav2-hover:hover {
+    .circle-icon , .readmore {
+        background-color: $black;
+    }
 }
-.nav2-hover:hover .readmore {
-    background-color: $black;
+.nav2-hover:hover {
+    .h4 , .nav2-text {
+        color: $black;
+    }
+}
+.card-detail {
+    height: 3px;
+    width: 28px;
+    background-color: #333645;
+    margin: 14px auto 11px;
 }
 article {
     background-color: #333645;
@@ -234,15 +271,18 @@ article {
     margin: auto;
 }
 .culture {
-    height: 35px;
     padding: 5px 15px;
-    background-color: #000000;
-    color: #ccc9ba;
+    background-color: #fff;
+    color: #333645;
     width: 141.203px;
     border-radius: 3px;
+    a {
+        line-height: 35px;
+    }
 }
+
 .culture:hover {
-    background-color: #2a2a2a;
+    background-color: #ebebeb;
 }
 .award .colour {
     display: none;
