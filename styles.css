@@ -1,5 +1,10 @@
+@charset "UTF-8";
 html {
   color: #333645;
+}
+
+p {
+  margin: 0;
 }
 
 body {
@@ -129,6 +134,18 @@ ul {
   margin: 28px 0 25px 0;
 }
 
+.readmore {
+  margin: 14px auto 0;
+  padding: 5px 15px;
+  border-radius: 3px;
+  line-height: 35px;
+  font-weight: 400px;
+  justify-self: end;
+  font-size: 16px;
+  border: #fff 1px solid;
+  height: 35px;
+}
+
 .back-purple {
   background-color: #926fb1;
   border-color: #926fb1;
@@ -213,16 +230,6 @@ td div {
   flex-grow: 1;
 }
 
-.readmore {
-  margin: 14px auto 0;
-  padding: 5px 15px;
-  width: 97.734px;
-  border-radius: 3px;
-  line-height: 35px;
-  font-weight: 400px;
-  justify-self: end;
-}
-
 .h4 {
   font-size: 1.125rem;
   margin: 0 auto;
@@ -230,7 +237,8 @@ td div {
 }
 
 h3 {
-  margin: 0 0 26px 0;
+  font-size: 20px;
+  margin: 0;
 }
 
 h2 {
@@ -286,6 +294,30 @@ h2 {
 
 .nav2-hover:hover .h4, .nav2-hover:hover .nav2-text {
   color: #fff;
+}
+
+.text-purple {
+  color: #926fb1;
+}
+
+.text-blue {
+  color: #4183d7;
+}
+
+.text-red {
+  color: #d64541;
+}
+
+.text-grey {
+  color: #67809f;
+}
+
+.text-green {
+  color: #2ecc71;
+}
+
+.text-pink {
+  color: #f62459;
 }
 
 .card-detail {
@@ -350,9 +382,14 @@ article {
 .bottom-nav-align {
   display: flex;
   width: 225px;
-  border-bottom: #ffffff 1px solid;
+  border-bottom: #888 1px solid;
   flex-wrap: wrap;
   padding-bottom: 10px;
+}
+
+.footer-header {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .footer-item {
@@ -385,10 +422,15 @@ article {
   padding: 50px 45px;
 }
 
+.privacy {
+  display: flex;
+}
+
 .privacy-policy {
-  margin: 0px 0px 35px 52px;
+  margin: 0px 0px 35px 0px;
   font-size: 1rem;
   line-height: 32px;
+  font-weight: 600;
 }
 
 #subscribe-button {
@@ -421,6 +463,33 @@ article {
   line-height: 35px;
 }
 
+.input:focus {
+  border-color: #5bc0de;
+  box-shadow: 0 0 3px 0px #5bc0de;
+}
+
+.checkbox {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border: 3px solid #333645;
+  margin: 0 20px 0 0;
+  border-radius: 3px;
+}
+
+.checkbox:checked {
+  color: #fff;
+  content: "✓";
+  background-color: #333645;
+}
+
+input[type=checkbox]::after {
+  content: "✓";
+}
+
 .required {
   color: #d24d57;
 }
@@ -444,6 +513,67 @@ article {
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
+}
+
+.news-deck {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.news-card {
+  border: #ccc 1px solid;
+  border-radius: 3px;
+  margin: 30px 0px 0px;
+}
+.news-card > img {
+  border-radius: 3px 3px 0px 0px;
+  width: 100%;
+}
+.news-card .pfp {
+  border-radius: 50%;
+  height: 47px;
+  width: 47px;
+}
+.news-card .news-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.news-card .readmore {
+  margin: 0;
+  color: #fff;
+  box-sizing: border-box;
+  width: 132.5px;
+  height: 47px;
+}
+.news-card .latest-news {
+  margin: 15px 0 25px;
+}
+.news-card .poster-details {
+  border-top: #ccc 1px solid;
+  margin-top: 30px;
+  padding-top: 30px;
+  display: flex;
+  font-size: 14px;
+}
+.news-card .poster-details p {
+  margin-left: 20px;
+  line-height: 1.375rem;
+}
+.news-card .text-link {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.latest-news {
+  margin: 40px 15px 0px;
+}
+
+.news-detail {
+  width: 71.813px;
+  height: 5px;
+  background-color: #333645;
+  margin: 35px 0px 0px;
 }
 
 .carousel-content {
@@ -502,6 +632,30 @@ article {
   .awards {
     display: block;
   }
+
+  .mobile-max-only {
+    display: none;
+  }
+
+  .latest-news {
+    margin: 40px 0 0 calc(50% - 375px);
+  }
+  .latest-news h3 {
+    padding-left: 15px;
+  }
+  .latest-news .news-detail {
+    margin-left: 15px;
+  }
+
+  .news-card {
+    width: 345px;
+    margin: 0px 15px;
+  }
+
+  .news-deck {
+    margin: auto;
+    display: flex;
+  }
 }
 @media only screen and (min-width: 992px) {
   .group1 {
@@ -544,6 +698,14 @@ article {
   .register {
     width: 880px;
     margin: auto;
+  }
+
+  .latest-news {
+    margin-left: calc(50% - 485px);
+  }
+
+  .news-card {
+    width: 455px;
   }
 }
 @media only screen and (min-width: 1260px) {
@@ -592,6 +754,18 @@ article {
 
   .register {
     width: 1110px;
+  }
+
+  .latest-news {
+    margin-left: calc(50% - 600px);
+  }
+
+  .news-card {
+    width: 370px;
+  }
+
+  .mobile-max-only {
+    display: block;
   }
 }
 
