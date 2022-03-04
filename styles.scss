@@ -5,6 +5,7 @@ $grey: #67809f;
 $green: #2ecc71;
 $pink: #f62459;
 $black: #fff ;
+$light-grey: #ccc ;
 html {
     color:#333645;
 }
@@ -48,7 +49,22 @@ button {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
+}
+.button-link {
+    color: white;
+    line-height: 44px;
+    border-radius: 3px;
+    padding: 5px 15px;
+    background-color: black;
+    font-size: 18px;
+    text-decoration: none;
+    vertical-align: middle;
+    height: 44px;
+    margin: 6px 20px 6px 0;
+    .icon {
+        margin-right: 5px;
+        font-size: 22px;
+    }
 }
 .menu-button {
     height: 56px;
@@ -60,7 +76,7 @@ button {
     padding: 0;
     border-radius: 3px;
     padding-top: 10px;
-    margin: 6px 0px 6px 29px ;
+    margin: 6px 0px 6px 20px ;
 } 
 .menu-icon {
     width: 33px;
@@ -75,6 +91,7 @@ button {
     display: flex;
     float: right;
     margin-left: auto;
+    height: 68px;
 }
 .header {
     margin: 0 15px;
@@ -93,13 +110,32 @@ button {
     border: #cecece 2px solid;
     margin-top: 11px;
     border-radius: 3px;
+    #search-bar {
+        margin: 7.5px 0px;
+        background-color: #e5e5e5;
+        border-color: #e5e5e5;
+        border-style: none;
+        font-size: 14px;
+    }
 }
-#search-bar {
-    background-color: #e5e5e5;
-    border-color: #e5e5e5;
-    border-style: none;
-    font-size: 14px;
-    margin: 7.5px 0px;
+.search-bar {
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+    margin: 0px 0;
+    height: 46px;
+    width: 142px;
+    padding: 5px 15px;
+    border: #ccc solid 1px;
+    border-radius: 3px 0 0 3px;
+    margin: 6px 0;  
+}
+.search-button {
+    height: 56px;
+    width: 63px;
+    color: white;
+    background-color: #ccc;
+    margin: 6px 0;
 }
 .mobile-search-button {
     background-color: #e5e5e5;
@@ -122,7 +158,6 @@ ul {
 .readmore {
     margin: 14px auto 0; 
     padding: 5px 15px;
-    border-radius: 3px;
     line-height: 35px;
     font-weight: 400px;
     justify-self: end;
@@ -153,6 +188,10 @@ ul {
 .back-pink {
     background-color: $pink;
     border-color: $pink;
+}
+.back-light-grey {
+    background-color: $light-grey;
+    border-color: $light-grey;
 }
 td div {
     border-radius: 3px;
@@ -304,7 +343,6 @@ article {
         line-height: 35px;
     }
 }
-
 .culture:hover {
     background-color: #ebebeb;
 }
@@ -332,7 +370,6 @@ article {
 .bottom-nav-align {
     display: flex;
     width: 225px;
-    border-bottom: #888 1px solid;
     flex-wrap: wrap;
     padding-bottom: 10px;
 }
@@ -357,6 +394,19 @@ article {
     justify-content: space-evenly;
     width: 100%;
     flex-wrap: wrap;
+}
+.copyright {
+    border-top: #888 1px solid;
+    width: 100%;
+    display: flex;
+    font-size: 13px;
+}
+.copyright-details {
+    display: flex;
+    flex-direction: column;
+}
+.divider {
+    margin: 0 10px;
 }
 .text-link:hover {
     text-decoration: underline;
@@ -416,11 +466,12 @@ article {
     border-radius: 3px;
 }
 .checkbox:checked {
-    color: #fff;
-    content: "\2713";
     background-color: #333645;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
 }
-input[type=checkbox]::after {
+input[type=checkbox]:checked:after {
     content: "\2713";
 }
 .required {
@@ -567,8 +618,23 @@ input[type=checkbox]::after {
         margin: auto;
         display: flex;
     }
+    .copyright-details {
+        flex-direction: row;
+    }
+    .mobile-only {
+        display: none;
+    }
+    .nonmobile-only {
+        display: inline;
+    }
 }
 @media only screen and (min-width: 992px) {
+    .small-only {
+        display: none;
+    }
+    .wide-only {
+        display: block;
+    }
     .group1 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -610,6 +676,9 @@ input[type=checkbox]::after {
     }
 }
 @media only screen and (min-width: 1260px) {
+    .max-only {
+        display: block;
+    }
     .group2 {
         grid-template-columns: repeat(4, 1fr);
     }
