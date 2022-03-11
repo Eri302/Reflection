@@ -147,6 +147,87 @@ button {
     margin: 5px 15px;
     height: 33px;
 }
+.nav-bar {
+    display: none;
+    font-size: 18px;
+    padding: 0 calc(50% - 470px);
+    span {
+        display: none;
+        border-left: #484a58 1px solid;
+        border-right: #262834 1px solid;
+    }
+    a {
+        text-align: center;
+        padding: 19px 0;
+        width: 132px;
+        border-right: #484a58 1px solid;
+        border-left: #262834 1px solid;
+    }
+    div {
+        font-size: 10px;
+    }
+    i {
+        padding-bottom: 10px;
+    }
+}
+.header-spacer {
+    margin: 0 20px;
+}
+.nav-bar {
+    display: flex;
+    background-color: #333645;
+}
+.nav {
+    color: white;
+}
+.nav-popup {
+    display: none;
+}
+.grey-nav i{
+    color: $grey;
+}
+.blue-nav i{
+    color: $blue;
+}
+.green-nav i{
+    color: $green;
+}
+.red-nav i{
+    color: $red;
+}
+.purple-nav i{
+    color: $purple;
+}
+.pink-nav i{
+    color: $pink;
+}
+.grey-nav:hover {
+    background-color: $grey;
+    border-color: $grey;
+}
+.blue-nav:hover{
+    background-color: $blue;
+    border-color: $blue;
+}
+.green-nav:hover{
+    background-color: $green;
+    border-color: $green;
+}
+.red-nav:hover{
+    background-color: $red;
+    border-color: $red;
+}
+.purple-nav:hover{
+    background-color: $purple;
+    border-color: $purple;
+}
+.pink-nav:hover{
+    background-color: $pink;
+    border-color: $pink;
+}
+.nav-button:hover .fas {
+    color: white;
+}
 ul {
     list-style: none;
     padding-left: 0;
@@ -346,6 +427,15 @@ article {
 .culture:hover {
     background-color: #ebebeb;
 }
+.awards {
+    margin: 50px 0;
+}
+.award-container {
+    display: none;
+}
+.associate-container {
+    padding: 50px 0;
+}
 .award .colour {
     display: none;
   }
@@ -496,7 +586,7 @@ input[type=checkbox]:checked:after {
 }
 .news-deck {
     padding: 50px 0;
-    background-color: #f9f9f9;
+    background-color: #fff;
 }
 .news-card {
     border: #ccc 1px solid;
@@ -570,6 +660,9 @@ input[type=checkbox]:checked:after {
     }
 }
 @media only screen and (min-width: 768px) {
+    .top-header {
+        margin-bottom: 20px;
+    }
     .group2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -618,6 +711,21 @@ input[type=checkbox]:checked:after {
         margin: auto;
         display: flex;
     }
+    .award-container {
+        display: flex;
+        padding: 0 calc(50% - 360px);
+        width: 720px;
+    }
+    .award {
+        padding: 0 20px;
+        display: inline;
+        box-sizing: content-box;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
     .copyright-details {
         flex-direction: row;
     }
@@ -635,6 +743,22 @@ input[type=checkbox]:checked:after {
     .wide-only {
         display: block;
     }
+    .nav-bar {
+        display: flex;
+        span {
+            display: flex;
+        }
+    }
+    .nav-popup {
+        display: flex;
+        padding: 0 calc(50% - 470px);
+        font-size: 13px;
+        line-height: 45px;
+    }
+    .nav-button:hover #training-popup{
+        display: flex;
+        text-shadow: 10px 10px #191a22;
+    }
     .group1 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -651,6 +775,14 @@ input[type=checkbox]:checked:after {
     }
     .article {
         width: 940px;
+    }
+    .award-container {
+        padding: 0 calc(50% - 470px);
+        width: 940px;
+    }
+    .associate-container {
+        padding: 50px calc(50% - 470px);
+        box-shadow: 0 0 20px #efefef inset;
     }
     .bottom-nav-align {
         width: 940px;
@@ -679,6 +811,19 @@ input[type=checkbox]:checked:after {
     .max-only {
         display: block;
     }
+    .nav-bar {
+        padding: 0 calc(50% - 585px);
+        a {
+           width: 165px; 
+        }
+    }
+    .nav-popup {
+        font-size: 15px;
+        padding: 0 calc(50% - 585px)
+    }
+    .header-spacer {
+        margin: 0 30px;
+    }
     .group2 {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -693,6 +838,14 @@ input[type=checkbox]:checked:after {
         .culture {
            width: 141.203px;
         }
+    }
+    .award-container {
+        padding: 0 calc(50% - 585px);
+        width: 1170px;
+        justify-content: space-evenly;
+    }
+    .associate-container {
+        padding: 50px calc(50% - 585px);
     }
     .footer-nav {
         margin-right: 45px;
