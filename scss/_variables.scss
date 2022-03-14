@@ -1,0 +1,49 @@
+// For Variables
+
+$primary: #333645;
+
+$purple:#926fb1;
+$blue: #4183d7;
+// $red: #d64541;
+// $grey: #67809f;
+// $green: #2ecc71;
+// $pink: #f62459;
+
+$white: #fff ;
+$light-grey: #ccc ;
+
+// Header Buttons
+$support-btn: #4183d7;
+$contact-btn: #ccc ;
+
+// Too many elements were using the same colors so I split them.
+
+//SERVICES COLORS
+$web-design: #926fb1;
+$web-design-hover: darken($web-design, 5%);
+$web-design-darken: darken($web-design, 10%);
+
+$developer-training: #926fb1;
+$developer-training-hover: darken($developer-training, 5%);
+$developer-training-darken: darken($developer-training, 10%);
+
+$digital-marketing: #2ecc71;
+$digital-marketing-hover: darken($digital-marketing, 5%);
+$digital-marketing-darken: darken($digital-marketing, 10%);
+
+$bespoke-software: #67809F;
+$bespoke-software-hover: darken($bespoke-software, 5%);
+$bespoke-software-darken: darken($bespoke-software, 10%);
+
+$telecoms-services: #d64541;
+$telecoms-services-hover: darken($telecoms-services, 5%);
+$telecoms-services-darken: darken($telecoms-services, 10%);
+
+$cyber-security: #f62459;
+$cyber-security-hover: darken($cyber-security, 5%);
+$cyber-security-darken: darken($cyber-security, 10%);
+
+$it-support: #4183d7;
+$it-support-hover: darken($it-support, 5%);
+$it-support-darken: darken($it-support, 10%);
+

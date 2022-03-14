@@ -1,0 +1,78 @@
+// Normalize Defualt Browser Styling.
+
+// Includes the padding and border in an elements total width and height
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+section,
+main,
+div,
+span,
+img,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    color:#333645;
+    font-size: 16px;
+    min-width: 100vw;
+    overflow-x: hidden;
+    
+    // border: 2px solid green;
+}
+p {
+    margin: 0;
+}
+body {
+    background-color: $white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: .4px;
+    margin: auto;
+    
+    min-width: 100vw;
+    // border: 2px solid blue;
+    // overflow-x: hidden;
+}
+input:focus { 
+    outline: none !important;
+}
+
+
+
+/* Remove list styles*/
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+/* Removes styling from links, buttons and inputs */
+a {
+    text-decoration: none;
+    padding: 0;
+
+    &:hover, &:active, &:focus {
+        outline: none ;
+        box-shadow: none !important;
+    }
+}

@@ -1,0 +1,119 @@
+// For Utility Classes. Feel free to add your own.
+
+
+// Container Classes ============
+// Sets the width of the content. Add to any elements you want
+.inner {
+    position: relative;
+    width: 100%;
+    max-width: 75rem; //1200px
+    
+    margin: 0 auto;
+    padding: 0 0.938rem; //15px
+    
+    // border: 1px solid purple;
+    
+    /* ------------------------------- Breakpoints ------------------------------ */
+    // width=750px from 768px to 992px viewport
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        max-width: 46.875rem; //750px
+    }
+    
+    // width=970px from 993px to 1260px viewport
+    @media only screen and (min-width: 992px) and (max-width: 1259px) {
+        max-width: 60.625rem; //970px
+    }
+}
+
+// Header buttons ============
+button {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+// Readmore Buttons ============
+.readmore {
+    margin: 14px auto 0; 
+    padding: 5px 15px;
+    font-weight: 400px;
+    justify-self: end;
+    border: #fff 1px solid;
+    line-height: 35px;
+    border-radius: 3px;
+}
+
+// Text classes ============
+
+.text-center {
+    text-align: center !important;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+.small-text {
+    font-size: 0.625rem;
+}
+
+// Default flex styling ============
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+// Hidden Classes ============
+
+.hidden {
+    display: none !important;
+}
+
+// Hide elements below 575px
+.hidden-xs {
+    @media (max-width: 575px) {
+        display: none !important;
+    }
+}
+
+// Hide elements between 576px & 767px
+.hidden-sm {
+    @media (min-width: 576px) and (max-width: 767px) {
+        display: none !important;
+    }
+}
+
+// Hide elements between 768px & 991px
+.hidden-md {
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: none !important;
+    }
+}
+// Hide elements between 992px & 1199px
+.hidden-lg {
+    @media (min-width: 992px) and (max-width: 1199px) {
+        display: none !important;
+    }
+}
+// Hide elements between 1200px & 1399px
+.hidden-xl {
+    @media (min-width: 1200px) and (max-width: 1399px) {
+        display: none !important;
+    }
+}
+// Hide elements above 1400px
+.hidden-xxl {
+    @media (min-width: 1400px) {
+        display: none !important;
+    }
+}

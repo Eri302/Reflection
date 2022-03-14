@@ -1,0 +1,153 @@
+
+// All Header Styling
+
+header {
+    width: 100%;
+    // border: 2px solid purple;
+}
+// Header Buttons (large screens)
+.contact-btn {
+    background-color: $contact-btn;
+    border-color: $contact-btn;
+}
+
+.support-btn {
+    background-color: $support-btn;
+    border-color: $support-btn;
+}
+
+// Header Spacing
+.header-spacer {
+    margin: 0 20px;
+}
+
+.nonmobile-only {
+    display: none;
+}
+.wide-only {
+    display: none
+}
+.netm-logo {
+    width: 100%;
+    max-width: 402px;
+}
+.netm-logo-container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.button-link {
+    color: white;
+    line-height: 44px;
+    border-radius: 3px;
+    padding: 5px 15px;
+    // background-color: black;
+    font-size: 18px;
+    text-decoration: none;
+    vertical-align: middle;
+    // height: 44px;
+    margin: 6px 20px 6px 0;
+    .icon {
+        margin-right: 5px;
+        font-size: 22px;
+    }
+}
+.menu-button {
+    height: 56px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: #333645;
+    color: white;
+    padding: 0;
+    border-radius: 3px;
+    padding-top: 10px;
+    margin: 6px 0px 6px 20px ;
+} 
+.menu-icon {
+    width: 33px;
+    height: 3px;
+    margin: 0px 15px 5px;
+    background-color: #fff;   
+}
+.menu-label {
+    margin: 2px 15px 0px
+}
+.mobile-nav {
+    display: flex;
+    float: right;
+    margin-left: auto;
+    height: 68px;
+}
+
+.top-header {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    flex-shrink: none;
+    padding: 0 15px;
+}
+.mobile-contact {
+    margin: 19px 0px 19px 15px;
+}
+.mobile-search {
+    background-color: #e5e5e5;
+    border: #cecece 2px solid;
+    margin: 11px 15px 20px;
+    border-radius: 3px;
+    #search-bar {
+        margin: 7.5px 0px;
+        background-color: #e5e5e5;
+        border-color: #e5e5e5;
+        border-style: none;
+        font-size: 14px;
+    }
+}
+.search-bar {
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+    margin: 0px 0;
+    // height: 46px;
+    width: 142px;
+    padding: 5px 15px;
+    border: #ccc solid 1px;
+    border-radius: 3px 0 0 3px;
+    margin: 6px 0;  
+}
+.search-button {
+    height: 56px;
+    width: 63px;
+    color: white;
+    background-color: #ccc;
+    margin: 6px 0;
+}
+.mobile-search-button {
+    background-color: #e5e5e5;
+    padding: 7.5px 6px;
+    float: right;
+}
+.mobile-search-bar {
+    box-sizing: border-box;
+    margin: 5px 15px;
+    height: 33px;
+}
+@media only screen and (min-width: 768px) { 
+    .top-header {
+        padding: 0 calc(50% - 360px);
+    }
+}
+@media only screen and (min-width: 992px) { 
+    .top-header {
+        padding: 0 calc(50% - 470px);
+    }
+}
+@media only screen and (min-width: 1260px) { 
+    .top-header {
+        padding: 0 calc(50% - 585px);
+    }
+}
+
+
+

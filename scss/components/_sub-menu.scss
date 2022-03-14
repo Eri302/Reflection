@@ -1,0 +1,95 @@
+
+// Sub Menu =========
+
+// Hide submenu for hover
+.submenu {
+    display: none;
+}
+
+// Show submenu for hover
+.navbar .item-list .item  {
+    &:hover {
+        .submenu {
+            display: block;
+            z-index: 3;
+        }
+    }
+    
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    justify-content: start;
+    
+    width: 100vw;
+    // background-color: $bespoke-software;
+    
+    // these is to make sure submenu spans entire screen width
+    &::before {
+        content: "";
+        // background-color: $bespoke-software;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 1000%;
+    }
+    &::after {
+        content: "";
+        right: 100%;
+    }
+    
+    // Items in sub-menu
+    .submenu-item-list {
+        justify-content: start; // Makes sure submenu text starts at beginning of container
+    }
+    
+    .submenu-item {
+        position: relative;
+        @include fitContent;    
+        
+        // All item subcategories except last have hyphen divider
+        &:not(:last-child) a::after {
+            content: "-";
+            padding-left: 20px;
+            
+            // Breakpoint @ 1260px
+            @media (min-width: 1260px) {
+                padding-left: 28px;
+            }
+        }
+        
+        a {
+            @include fullSize;
+            display: inline-block;
+            color: white;
+            
+            line-height: 45px;
+            padding: 0;
+            
+            // Spacing between hyphen & text
+            padding-right: 20px;
+            
+            // increase font-size @ 1260px breakpoint
+            font-size: 13px;
+            
+            @media (min-width: 1260px) {
+                font-size: 16px;
+                padding-right: 28px;
+            }
+            
+            
+        }
+    }
+    
+    
+}
+
+
+
+
+
+

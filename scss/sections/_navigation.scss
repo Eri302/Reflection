@@ -1,0 +1,82 @@
+// All Navigation Styling
+
+.navbar {
+    width: 100%;
+    background-color: $primary;
+    color: #fff;
+    
+    .item-list {
+        position: relative; // Makes sure all submenus are aligned to container
+        width: 100%;
+        justify-content: start;
+        
+        border-left: 1px solid hsla(0,0%,100%,.1);
+        border-right: 1px solid rgba(0,0,0,.25);
+    }
+    
+    // Style all nav items
+    .item {
+        // Makes all items take equal space inside .item-list no matter it's size or how many .items are inside it.  
+        flex: 1; 
+        
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        border-left: 1px solid rgba(0, 0, 0, 0.25);
+        
+        // Links styling
+        a {
+            position: relative;
+            color: #fff;
+            font-size: 18px;
+            
+            line-height: 1;
+            
+            padding: 18px 0;
+            flex-direction: column;
+            
+            @include fullSize;
+            
+            // Icon
+            .icon {
+                padding-bottom: 10px;
+            }
+            
+            .small-text {
+                padding-bottom: 3px;
+            }
+        }
+    }
+}
+
+// I put the submenu styling in another partial for clarity sake. It;s in the scss/components folder
+
+// Submenu Colors =======
+.nav-inner .bespoke-software {
+    @include submenuColor($bespoke-software, $bespoke-software-darken);
+}
+
+.nav-inner .it-support {
+    @include submenuColor($it-support, $it-support-darken);
+}
+
+.nav-inner .digital-marketing {
+    @include submenuColor($digital-marketing, $digital-marketing-darken);
+}
+
+.nav-inner .telecoms-services {
+    @include submenuColor($telecoms-services, $telecoms-services-darken);
+}
+
+.nav-inner .web-design {
+    @include submenuColor($web-design, $web-design-darken);
+}
+
+.nav-inner .cyber-security {
+    @include submenuColor($cyber-security, $cyber-security-darken);
+}
+
+.nav-inner .developer-training {
+    @include submenuColor($developer-training, $developer-training-darken);
+}
+
+
+

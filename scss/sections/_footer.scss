@@ -1,0 +1,22 @@
+// Footer CSS
+
+.bottom {
+    background-color: #333645;
+    padding: 47px 0 43px 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.bottom-nav-align {
+    display: flex;
+    width: 225px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    // border: 2px solid red;
+}
+.bottom-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap
+}

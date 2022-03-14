@@ -1,320 +1,44 @@
-$purple:#926fb1;
-$blue: #4183d7;
-$red: #d64541;
-$grey: #67809f;
-$green: #2ecc71;
-$pink: #f62459;
-$black: #fff ;
-$light-grey: #ccc ;
-html {
-    color:#333645;
-}
-p {
-    margin: 0;
-}
-body {
-    background-color: $black;
-    font-family: 'Poppins',Lato,Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: .4px;
-    margin: auto;
-}
-input:focus { 
-    outline: none !important;
-}
-button {
-    display: inline-block;
-    border: none;
-    margin: 0;
-    text-decoration: none;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-.nonmobile-only {
-    display: none;
-}
-.wide-only {
-    display: none
-}
-.netm-logo {
-    width: 100%;
-    max-width: 402px;
-}
-.netm-logo-container {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.button-link {
-    color: white;
-    line-height: 44px;
-    border-radius: 3px;
-    padding: 5px 15px;
-    background-color: black;
-    font-size: 18px;
-    text-decoration: none;
-    vertical-align: middle;
-    height: 44px;
-    margin: 6px 20px 6px 0;
-    .icon {
-        margin-right: 5px;
-        font-size: 22px;
-    }
-}
-.menu-button {
-    height: 56px;
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-    background-color: #333645;
-    color: white;
-    padding: 0;
-    border-radius: 3px;
-    padding-top: 10px;
-    margin: 6px 0px 6px 20px ;
-} 
-.menu-icon {
-    width: 33px;
-    height: 3px;
-    margin: 0px 15px 5px;
-    background-color: #fff;   
-}
-.menu-label {
-    margin: 2px 15px 0px
-}
-.mobile-nav {
-    display: flex;
-    float: right;
-    margin-left: auto;
-    height: 68px;
-}
-.header {
-    margin: 0 15px;
-}
-.top-header {
-    display: flex;
-    margin-top: 20px;
-    width: 100%;
-    flex-shrink: none;
-}
-.mobile-contact {
-    margin: 19px 0px 19px 15px;
-}
-.mobile-search {
-    background-color: #e5e5e5;
-    border: #cecece 2px solid;
-    margin-top: 11px;
-    border-radius: 3px;
-    #search-bar {
-        margin: 7.5px 0px;
-        background-color: #e5e5e5;
-        border-color: #e5e5e5;
-        border-style: none;
-        font-size: 14px;
-    }
-}
-.search-bar {
-    -moz-appearance:none;
-    -webkit-appearance:none;
-    -o-appearance:none;
-    margin: 0px 0;
-    height: 46px;
-    width: 142px;
-    padding: 5px 15px;
-    border: #ccc solid 1px;
-    border-radius: 3px 0 0 3px;
-    margin: 6px 0;  
-}
-.search-button {
-    height: 56px;
-    width: 63px;
-    color: white;
-    background-color: #ccc;
-    margin: 6px 0;
-}
-.mobile-search-button {
-    background-color: #e5e5e5;
-    padding: 7.5px 6px;
-    float: right;
-}
-.mobile-search-bar {
-    box-sizing: border-box;
-    margin: 5px 15px;
-    height: 33px;
-}
-.nav-bar {
-    display: none;
-    font-size: 18px;
-    padding: 0 calc(50% - 470px);
-    span {
-        display: none;
-        border-left: #484a58 1px solid;
-        border-right: #262834 1px solid;
-    }
-    a {
-        text-align: center;
-        padding: 19px 0;
-        width: 132px;
-        border-right: #484a58 1px solid;
-        border-left: #262834 1px solid;
-    }
-    div {
-        font-size: 10px;
-    }
-    i {
-        padding-bottom: 10px;
-    }
-}
-.header-spacer {
-    margin: 0 20px;
-}
-.nav-bar {
-    display: flex;
-    background-color: #333645;
-}
-.nav {
-    color: white;
-}
-.nav-popup {
-    display: none;
-}
-.grey-nav i{
-    color: $grey;
-}
-.blue-nav i{
-    color: $blue;
-}
-.green-nav i{
-    color: $green;
-}
-.red-nav i{
-    color: $red;
-}
-.purple-nav i{
-    color: $purple;
-}
-.pink-nav i{
-    color: $pink;
-}
-.grey-nav:hover {
-    background-color: $grey;
-    border-color: $grey;
-}
-.blue-nav:hover{
-    background-color: $blue;
-    border-color: $blue;
-}
-.green-nav:hover{
-    background-color: $green;
-    border-color: $green;
-}
-.red-nav:hover{
-    background-color: $red;
-    border-color: $red;
-}
-.purple-nav:hover{
-    background-color: $purple;
-    border-color: $purple;
-}
-.pink-nav:hover{
-    background-color: $pink;
-    border-color: $pink;
-}
-.nav-button:hover .fas {
-    color: white;
-}
-ul {
-    list-style: none;
-    padding-left: 0;
-}
+/* 
+* List of partials I created.
+* Partials should begin with an underline in the folder. Example. "_variables.scss". 
+* This so that Sass doesn't generate a seperate css file for each partial
+
+* When importing you can leave out the underline and the .scss file extension
+*/
+
+// Variables
+@import "variables";
+
+// Utilities
+@import "utilities/normalize";
+@import "utilities/mixins";
+@import "utilities/utilities";
+
+// Sections
+@import "sections/header";
+@import "sections/navigation";
+@import "components/sub-menu";
+
+@import "sections/services";
+@import "sections/footer";
+
+// for articles section
 .bold {
     font-weight: 600;
     margin: 28px 0 25px 0;
 }
-.readmore {
-    margin: 14px auto 0; 
-    padding: 5px 15px;
-    line-height: 35px;
-    font-weight: 400px;
-    justify-self: end;
-    font-size: 16px;
-    border: #fff 1px solid;
-    height: 35px;
-}
-.back-purple {
-    background-color: $purple;
-    border-color: $purple;
-}
-.back-blue {
-    background-color: $blue;
-    border-color: $blue;
-}
-.back-red {
-    background-color: $red;
-    border-color: $red;
-}
-.back-grey {
-    background-color: $grey;
-    border-color: $grey;
-}
-.back-green {
-    background-color: $green;
-    border-color: $green;
-}
-.back-pink {
-    background-color: $pink;
-    border-color: $pink;
-}
-.back-light-grey {
-    background-color: $light-grey;
-    border-color: $light-grey;
-}
+
 td div {
     border-radius: 3px;
 }
-.nav2 {
-    text-align: center;
-    margin: auto;
-}
+
 .middle {
     margin-bottom: 50px;
     color: white;
 }
-.circle-icon {
-    border-radius: 50%;
-    align-items: center;
-    height: 60px;
-    width: 60px;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 17px;
-}
-.nav2-hover {
-    border: 1px solid #ccc;;
-    border-radius: 3px;
-    display: flex;
-    background-color: $black;
-    margin: 30px 15px 0px 15px;
-    padding: 30px;
-}
-.nav2-hover a{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.nav2-text {
-    margin: 0 auto;
-    font-size: .8125rem;
-    line-height: 1.375rem;
-    font-weight: 400;
-}
+
 .h4 , .nav2-text {
-    color: #333645;
+    color: $primary;
 }
 .grow {
     flex-grow: 1;
@@ -338,72 +62,81 @@ h2 {
     margin-bottom: 25px;
 }
 
-#purple-hover:hover {
-   border-color: $purple;
-   background-color: $purple;
-   color: $purple;
-}
-#blue-hover:hover {
-    border-color: $blue;
-    background-color: $blue;
-    color: $blue;
-}
-#red-hover:hover {
-    border-color: $red;
-    background-color: $red;
-    color: $red;
-}
-#grey-hover:hover {
-    border-color: $grey;
-    background-color: $grey;
-    color: $grey;
-}
-#green-hover:hover {
-    border-color: $green;
-    background-color: $green;
-    color: $green;
-}
-#pink-hover:hover {
-    border-color: $pink;
-    background-color: $pink;
-    color: $pink;
-}
-.nav2-hover:hover {
-    .circle-icon , .readmore {
-        background-color: $black;
-    }
-}
-.nav2-hover:hover {
-    .h4 , .nav2-text {
-        color: $black;
-    }
-}
+
 .text-purple {
     color: $purple
 }
 .text-blue {
-    color: $blue
+    color: $it-support
 }
 .text-red {
-    color: $red
+    color: $telecoms-services
 }
 .text-grey {
-    color: $grey
+    color: $bespoke-software
 }
 .text-green {
-    color: $green
+    color: $digital-marketing
 }
 .text-pink {
-    color: $pink
+    color: $cyber-security
+}
+.back-purple {
+    background-color: $purple
+}
+.back-blue {
+    background-color: $it-support
+}
+.back-red {
+    background-color: $telecoms-services
+}
+.back-grey {
+    background-color: $bespoke-software
+}
+.back-green {
+    background-color: $digital-marketing
+}
+.back-pink {
+    background-color: $cyber-security
+}
+.back-light-grey {
+    background-color: #ccc;
 }
 .card-detail {
     height: 3px;
     width: 28px;
-    background-color: #333645;
+    background-color: $primary;
     margin: 14px auto 11px;
 }
+.carousel {
+    display: flex;
+    color: white;
+    height: 828px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    p {
+        margin-bottom: 35px;
+        font-size: 20px;
+    }
+    h1 {
+        margin-bottom: 25px;
+        font-size: 48px;
+        font-weight: 400;
+    }
+}
+.FOmore {
+    color: white;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 20px;
+    line-height: 50px;
+    height: 35px;
+}
 article {
-    background-color: #333645;
+    background-color: $primary;
     font-size: 1rem;
     justify-content: center;
     font-family: Poppins,sans-serif;
@@ -417,8 +150,8 @@ article {
 .culture {
     padding: 5px 15px;
     background-color: #fff;
-    color: #333645;
-    width: 141.203px;
+    color: $primary;
+    width: 171.203px;
     border-radius: 3px;
     a {
         line-height: 35px;
@@ -433,9 +166,6 @@ article {
 .award-container {
     display: none;
 }
-.associate-container {
-    padding: 50px 0;
-}
 .award .colour {
     display: none;
   }
@@ -447,25 +177,15 @@ article {
         display: block;
     }
   }
-.bottom {
-    background-color: #333645;
-    padding: 47px 0 43px 0;
-    display: flex;
-    justify-content: center;
-    color: white;
-}
+
 .invis {
-    color: #333645;
+    color: $primary;
 }
-.bottom-nav-align {
-    display: flex;
-    width: 225px;
-    flex-wrap: wrap;
-    padding-bottom: 10px;
-}
+
 .footer-header {
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 26px;
 }
 .footer-item {
     margin-bottom: 30px;
@@ -473,12 +193,7 @@ article {
     line-height: 1.375rem;
     font-size: .8125rem;
 }
-.bottom-nav {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    flex-wrap: wrap
-}
+
 .contact-info {
     display: flex;
     justify-content: space-evenly;
@@ -515,7 +230,7 @@ article {
     font-weight: 600;
 }
 #subscribe-button {
-    background-color: #333645;
+    background-color: $primary;
     border-radius: 3px;
     font-size: 1.063rem;
     padding: 5px 15px;
@@ -551,12 +266,12 @@ article {
     width: 32px;
     height: 32px;
     min-width: 32px;
-    border: 3px solid #333645;
+    border: 3px solid $primary;
     margin: 0 20px 0 0;
     border-radius: 3px;
 }
 .checkbox:checked {
-    background-color: #333645;
+    background-color: $primary;
     color: #fff;
     text-align: center;
     font-size: 16px;
@@ -576,14 +291,7 @@ input[type=checkbox]:checked:after {
 .bottom-awards {
     display: flex;
 }
-.carousel {
-    background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.webp");
-    height: 828px;
-    display: flex;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-}
+
 .news-deck {
     padding: 50px 0;
     background-color: #fff;
@@ -610,8 +318,10 @@ input[type=checkbox]:checked:after {
         margin: 0;
         color: #fff;
         box-sizing: border-box;
-        width: 132.5px;
-        height: 47px
+        width: 133.5px;
+        line-height: 35px;
+        border-radius: 3px;
+        font-size: 16px;
     }
     .latest-news {
         margin: 15px 0 25px;
@@ -621,7 +331,7 @@ input[type=checkbox]:checked:after {
         margin-top: 30px;
         padding-top: 30px;
         display: flex;
-        font-size: 14px;
+        font-size: 16px;
         p { 
             margin-left: 20px;
             line-height: 1.375rem;
@@ -638,13 +348,16 @@ input[type=checkbox]:checked:after {
 .news-detail {
     width: 71.813px;
     height: 5px;
-    background-color: #333645;
+    background-color: $primary;
     margin: 35px 0px 0px;
 }
-.carousel-content {
-    width: 350px;
-    text-align: center;
-}
+
+
+/* 
+ * Wanted to split up the breakpoints
+*/
+
+// Breakpoints
 @media only screen and (min-width: 495px) {
     .bottom-nav-align {
         width: 450px;
@@ -714,7 +427,10 @@ input[type=checkbox]:checked:after {
     .award-container {
         display: flex;
         padding: 0 calc(50% - 360px);
-        width: 720px;
+        box-shadow: 0 0 20px #efefef inset;
+    }
+    .associate-container {
+        padding: 50px calc(50% - 360px);
     }
     .award {
         padding: 0 20px;
@@ -759,6 +475,13 @@ input[type=checkbox]:checked:after {
         display: flex;
         text-shadow: 10px 10px #191a22;
     }
+    .carousel {
+        justify-content: start;
+        padding: 0 calc(50% - 470px)
+    }
+    .carousel-content {
+        text-align: left;
+    }
     .group1 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -778,7 +501,6 @@ input[type=checkbox]:checked:after {
     }
     .award-container {
         padding: 0 calc(50% - 470px);
-        width: 940px;
     }
     .associate-container {
         padding: 50px calc(50% - 470px);
@@ -821,8 +543,9 @@ input[type=checkbox]:checked:after {
         font-size: 15px;
         padding: 0 calc(50% - 585px)
     }
-    .header-spacer {
-        margin: 0 30px;
+    .carousel {
+        justify-content: start;
+        padding: 0 calc(50% - 585px)
     }
     .group2 {
         grid-template-columns: repeat(4, 1fr);
@@ -836,12 +559,11 @@ input[type=checkbox]:checked:after {
             width: 570px;
         }
         .culture {
-           width: 141.203px;
+           width: 171.203px;
         }
     }
     .award-container {
         padding: 0 calc(50% - 585px);
-        width: 1170px;
         justify-content: space-evenly;
     }
     .associate-container {
@@ -880,3 +602,10 @@ input[type=checkbox]:checked:after {
         display: block;
     }
 }
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+// For banner and services cards
+
+// Banner
+.carousel {
+    position: relative;
+    background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.webp");
+    height: 828px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+.carousel-content {
+    width: 350px;
+    text-align: center;
+}
+
+// Cards
+.nav2 {
+    text-align: center;
+    margin: auto;
+}
+.nav2-hover {
+    border: 1px solid #ccc;;
+    border-radius: 3px;
+    display: flex;
+    background-color: $white;
+    margin: 30px 15px 0px 15px;
+    padding: 30px;
+}
+.nav2-hover a{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.nav2-text {
+    margin: 0 auto;
+    font-size: .8125rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+}
+.nav2-hover:hover {
+    .circle-icon , .readmore , .card-detail {
+        background-color: $white;
+    }
+}
+.nav2-hover:hover {
+    .h4 , .nav2-text {
+        color: $white;
+    }
+}
+
+.circle-icon {
+    border-radius: 50%;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 17px;
+}
+
+// Hover
+#purple-hover:hover {
+    border-color: $purple;
+    background-color: $purple;
+    color: $purple;
+}
+#blue-hover:hover {
+    border-color: $it-support;
+    background-color: $it-support;
+    color: $it-support;
+}
+#red-hover:hover {
+    border-color: $telecoms-services;
+    background-color: $telecoms-services;
+    color: $telecoms-services;
+}
+#grey-hover:hover {
+    border-color: $bespoke-software;
+    background-color: $bespoke-software;
+    color: $bespoke-software;
+}
+#green-hover:hover {
+    border-color: $digital-marketing;
+    background-color: $digital-marketing;
+    color: $digital-marketing;
+}
+#pink-hover:hover {
+    border-color: $cyber-security;
+    background-color: $cyber-security;
+    color: $cyber-security;
+}
